@@ -1,9 +1,9 @@
     .mainLogo {
-        width: 10em;
+        width: 25vw;
     }
     
     .nav-link {
-        font-size: 1.5em;
+        font-size: 2vw;
         margin-left: 5px;
         margin-right: 5px;
         color: #7137E5;
@@ -18,7 +18,7 @@
     
     .video {
         border: 1px solid black;
-        font-size: 3em;
+        font-size: 4vw;
         flex-grow: 10;
         align-self: center;
         box-shadow: 0 5px 5px 2px #FFF400;
@@ -56,7 +56,7 @@
     .personality {
         border: 1px solid black;
         border-radius: 5px;
-        font-size: 2em;
+        font-size: 3vw;
     }
     
     .testRow {
@@ -72,26 +72,26 @@
         margin: 0;
     }
     
-    @media(min-width:992px) {
-        div.container-fluid>div.expertsRow992un {
+    @media(min-width:768px) {
+        div.container-fluid>div.expertsRow768un {
             display: none !important;
         }
-        .expertsRow992 {
+        .expertsRow768 {
             display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: repeat(3, 20vw);
             grid-template-areas: "e1 e2 e3";
             justify-content: space-evenly;
         }
-        .expert1-992 {
+        .expert1-768 {
             grid-area: e1;
             border: 1px solid black;
         }
-        .expert2-992 {
+        .expert2-768 {
             grid-area: e2;
             border: 1px solid black;
         }
-        .expert3-992 {
+        .expert3-768 {
             grid-area: e3;
             border: 1px solid black;
         }
@@ -101,11 +101,11 @@
         }
     }
     
-    @media(max-width:992px) {
-        div.container-fluid>div.expertRow992 {
+    @media(max-width:768px) {
+        div.container-fluid>div.expertRow768 {
             display: none !important;
         }
-        .expert-992 {
+        .expert-768 {
             display: none;
         }
         .expertsRow {
@@ -119,29 +119,35 @@
         .expert1 {
             grid-area: e1;
             border: 1px solid black;
+            align-self: center;
         }
         .expert2 {
             grid-area: e2;
             border: 1px solid black;
+            align-self: center;
         }
         .expert3 {
             grid-area: e3;
             border: 1px solid black;
+            align-self: center;
         }
         .image1 {
             grid-area: image1;
             border: 1px solid black;
             vertical-align: middle;
+            align-self: center;
         }
         .image2 {
             grid-area: image2;
             border: 1px solid black;
             vertical-align: middle;
+            align-self: center;
         }
         .image3 {
             grid-area: image3;
             border: 1px solid black;
             vertical-align: middle;
+            align-self: center;
         }
         .expertImage {
             width: 30vw;
@@ -173,21 +179,21 @@
     }
     
     .expertTitle {
-        font-size: 2em;
+        font-size: 3vw;
         text-align: center;
     }
     
     .expertHeading {
-        font-size: 1.5em;
+        font-size: 2.5vw;
         text-align: center;
     }
     
     .expertContent {
-        font-size: 1.25em;
+        font-size: 2vw;
     }
     
     .expertButton {
-        font-size: 1.5em;
+        font-size: 2.5vw;
         margin-top: 1vw;
     }
     
@@ -198,4 +204,8 @@
     
     .card-text {
         float: right;
+    }
+    
+    video {
+        border: 1px solid black;
     }
