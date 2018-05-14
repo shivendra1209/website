@@ -63,44 +63,58 @@
         margin-top: 10px;
     }
     
-    .motivation {
-        border: 1px solid black;
-    }
-    
-    .rule {
+    .rule,
+    .ruleExpert {
         background-color: red;
     }
     
+    .ruleExpert {
+        margin: 0;
+    }
+    
     @media(min-width:992px) {
-        .expertsRow {
+        div.container-fluid>div.expertsRow992un {
+            display: none !important;
+        }
+        .expertsRow992 {
             display: grid;
             grid-template-rows: 1fr;
-            grid-template-columns: repeat(9, 9vw);
-            grid-template-areas: "e1 e1 e1 e2 e2 e2 e3 e3 e3";
-            justify-content: space-around;
+            grid-template-columns: repeat(3, 20vw);
+            grid-template-areas: "e1 e2 e3";
+            justify-content: space-evenly;
         }
-        .expert1 {
+        .expert1-992 {
             grid-area: e1;
             border: 1px solid black;
         }
-        .expert2 {
+        .expert2-992 {
             grid-area: e2;
             border: 1px solid black;
         }
-        .expert3 {
+        .expert3-992 {
             grid-area: e3;
             border: 1px solid black;
+        }
+        .expertImage {
+            width: 20vw;
+            margin-bottom: 0px;
         }
     }
     
     @media(max-width:992px) {
+        div.container-fluid>div.expertRow992 {
+            display: none !important;
+        }
+        .expert-992 {
+            display: none;
+        }
         .expertsRow {
             display: grid;
             grid-template-rows: repeat(3, 1fr);
-            grid-template-columns: repeat(3, 17vw);
-            grid-template-areas: "e1 e1 e1" "e2 e2 e2" "e3 e3 e3";
+            grid-template-columns: repeat(2, 30vw);
+            grid-template-areas: "image1 e1" "image2 e2" "image3 e3";
             justify-content: space-around;
-            align-content: space-around;
+            row-gap: 10px;
         }
         .expert1 {
             grid-area: e1;
@@ -113,6 +127,24 @@
         .expert3 {
             grid-area: e3;
             border: 1px solid black;
+        }
+        .image1 {
+            grid-area: image1;
+            border: 1px solid black;
+            vertical-align: middle;
+        }
+        .image2 {
+            grid-area: image2;
+            border: 1px solid black;
+            vertical-align: middle;
+        }
+        .image3 {
+            grid-area: image3;
+            border: 1px solid black;
+            vertical-align: middle;
+        }
+        .expertImage {
+            width: 30vw;
         }
     }
     
@@ -138,4 +170,32 @@
     
     .linkCol {
         text-align: center;
+    }
+    
+    .expertTitle {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .expertHeading {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    
+    .expertContent {
+        font-size: 1.25em;
+    }
+    
+    .expertButton {
+        font-size: 1.5em;
+        margin-top: 1vw;
+    }
+    
+    .expertImage {
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+    .card-text {
+        float: right;
     }
