@@ -3,60 +3,28 @@
     }
     
     .nav-link {
-        font-size: 2vw;
+        font-size: 1.75vw;
         margin-left: 5px;
         margin-right: 5px;
-        color: #7137E5;
+        color: #4FC806;
+    }
+    
+    .nav-link:hover {
+        color: #3B9106;
     }
     
     .toggler {
         width: 20px;
         height: 5px;
-        background-color: #7137E5;
+        background-color: #4FC806;
         margin: 3px 0;
-    }
-    
-    .video {
-        border: 1px solid black;
-        font-size: 4vw;
-        flex-grow: 10;
-        align-self: center;
-        box-shadow: 0 5px 5px 2px #FFF400;
-        border-radius: 5px;
-        /*animation-name: boxShadow;
-        animation-duration: 4s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;*/
-    }
-    
-    @keyframes boxShadow {
-        0% {
-            box-shadow: 5px 5px 5px 2px #FFF400;
-        }
-        25% {
-            box-shadow: 5px -5px 5px 2px #FFF400;
-        }
-        50% {
-            box-shadow: -5px -5px 5px 2px #FFF400;
-        }
-        75% {
-            box-shadow: -5px 5px 5px 2px #FFF400;
-        }
-        100% {
-            box-shadow: 5px 5px 5px 2px #FFF400;
-        }
-    }
-    
-    .videoRow {
-        display: flex;
-        justify-content: space-around;
     }
     
     .signup,
     .personality {
-        border: 1px solid black;
+        border: 1px solid rgb(45, 5, 147);
         border-radius: 5px;
-        font-size: 3vw;
+        font-size: 2vw;
     }
     
     .testRow {
@@ -65,7 +33,7 @@
     
     .rule,
     .ruleExpert {
-        background-color: red;
+        background-color: rgba(45, 5, 147, 0.8);
     }
     
     .ruleExpert {
@@ -73,91 +41,77 @@
     }
     
     @media(min-width:768px) {
-        div.container-fluid>div.expertsRow768un {
-            display: none !important;
-        }
-        .expertsRow768 {
+        .expertsRow {
             display: grid;
             grid-template-rows: 1fr;
-            grid-template-columns: repeat(3, 20vw);
+            grid-template-columns: repeat(3, 23vw);
             grid-template-areas: "e1 e2 e3";
             justify-content: space-evenly;
         }
-        .expert1-768 {
+        .expert1 {
             grid-area: e1;
-            border: 1px solid black;
+            border: 1px solid rgb(45, 5, 147);
         }
-        .expert2-768 {
+        .expert2 {
             grid-area: e2;
-            border: 1px solid black;
+            border: 1px solid rgb(45, 5, 147);
         }
-        .expert3-768 {
+        .expert3 {
             grid-area: e3;
-            border: 1px solid black;
+            border: 1px solid rgb(45, 5, 147);
         }
         .expertImage {
-            width: 20vw;
+            width: 15vw;
             margin-bottom: 0px;
+            display: flex;
+            margin: auto;
+        }
+        .signup,
+        .personality {
+            margin-top: 4vh;
         }
     }
     
     @media(max-width:768px) {
-        div.container-fluid>div.expertRow768 {
-            display: none !important;
-        }
-        .expert-768 {
-            display: none;
-        }
         .expertsRow {
             display: grid;
             grid-template-rows: repeat(3, 1fr);
-            grid-template-columns: repeat(2, 30vw);
-            grid-template-areas: "image1 e1" "image2 e2" "image3 e3";
+            grid-template-columns: 60vw;
+            grid-template-areas: "e1" "e2" "e3";
             justify-content: space-around;
             row-gap: 10px;
         }
         .expert1 {
             grid-area: e1;
-            border: 1px solid black;
+            border: 1px solid rgb(45, 5, 147);
             align-self: center;
         }
         .expert2 {
             grid-area: e2;
-            border: 1px solid black;
+            border: 1px solid rgb(45, 5, 147);
             align-self: center;
         }
         .expert3 {
             grid-area: e3;
-            border: 1px solid black;
-            align-self: center;
-        }
-        .image1 {
-            grid-area: image1;
-            border: 1px solid black;
-            vertical-align: middle;
-            align-self: center;
-        }
-        .image2 {
-            grid-area: image2;
-            border: 1px solid black;
-            vertical-align: middle;
-            align-self: center;
-        }
-        .image3 {
-            grid-area: image3;
-            border: 1px solid black;
-            vertical-align: middle;
+            border: 1px solid rgb(45, 5, 147);
             align-self: center;
         }
         .expertImage {
-            width: 30vw;
+            width: 39vw;
+            display: flex;
+            margin: auto;
+        }
+        .signup {
+            margin-bottom: 5vh;
+            margin-top: 4vh;
         }
     }
     
     .knowMore {
         text-decoration: none;
-        color: rgba(113, 55, 229, 0.8);
+        color: rgba(79, 200, 6, 0.8);
         text-align: center;
+        font-size: 2vw;
     }
     
     .knowMore:visited {
@@ -166,12 +120,12 @@
     
     .knowMore:hover {
         text-decoration: none;
-        color: rgba(113, 55, 229, 1);
+        color: rgba(79, 200, 6, 1);
     }
     
     .knowMore:active {
         text-decoration: none;
-        color: rgba(113, 55, 229, 1);
+        color: rgba(79, 200, 6, 1);
     }
     
     .linkCol {
@@ -179,22 +133,23 @@
     }
     
     .expertTitle {
-        font-size: 3vw;
+        font-size: 2.25vw;
         text-align: center;
     }
     
     .expertHeading {
-        font-size: 2.5vw;
+        font-size: 1.75vw;
         text-align: center;
     }
     
     .expertContent {
-        font-size: 2vw;
+        font-size: 1.25vw;
     }
     
     .expertButton {
-        font-size: 2.5vw;
+        font-size: 2vw;
         margin-top: 1vw;
+        margin-bottom: 1vw;
     }
     
     .expertImage {
@@ -206,6 +161,71 @@
         float: right;
     }
     
-    video {
-        border: 1px solid black;
+    .footer {
+        font-size: 1.5vw;
+    }
+    
+    .btn-primary {
+        background-color: #4FC806;
+        color: black;
+        border-color: rgb(45, 5, 147);
+        padding: 0;
+    }
+    
+    .btn-primary:hover {
+        background-color: #5DCB1A;
+        color: black;
+    }
+    
+    .btn {
+        padding: 0;
+    }
+    
+    .linkSignup,
+    .linkPersonality,
+    .linkSignup:hover,
+    .linkPersonality:hover,
+    .linkPersonality:visited,
+    .linkSignup:visited {
+        text-decoration: none;
+    }
+    
+    .signUpButton,
+    .personalityButton {
+        font-size: 2vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+    
+    .card-text {
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+    
+    @media(max-width: 1000px) {
+        .nav-link {
+            font-size: 2.25vw;
+        }
+        .signup,
+        .personality,
+        .knowMore {
+            font-size: 2.5vw;
+        }
+        .expertTitle {
+            font-size: 2.75vw;
+        }
+        .expertHeading {
+            font-size: 2.25vw;
+        }
+        .expertContent {
+            font-size: 2vw;
+        }
+        .expertButton,
+        .signUpButton,
+        .personalityButton {
+            font-size: 2.5vw;
+        }
+        .footer {
+            font-size: 2.5vw;
+        }
     }
