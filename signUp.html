@@ -42,30 +42,73 @@
         </div>
     </nav>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10 signUpRow">
-                <div class="signUpHeading">
-                    Sign Up - MoodCafe
-                </div>
+        <div class="row rowEmail">
+            <div class="col-2">
 
-                <div class="signUpEmail">
-                    <label for="email">Enter your E-mail</label>
-                </div>
-                <div class="signUpForm">
+            </div>
+            <div class="col-8">
+                <div class="alert alert-info">
+                    <h5 class="alert-heading">Sign Up Process (1/3) - Enter Email</h5>
+                    <hr class="rule">
+                    <p class="contentEmail">Enter your Email Address you want to register with</p>
+                    <label for="email">Enter E-mail</label>
                     <form>
                         <div class="form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Enter your e-mail address" type="text">
+                            <input class="form-control" id="email" name="email" placeholder="Enter Email-Address" type="text">
                             <br><br>
-                            <input type="submit" class="btn btn-primary signUpButton" value="Sign up">
+                            <input type="submit" class="btn btn-primary submitButton" value="Sign up">
+
                         </div>
                     </form>
                 </div>
-
+            </div>
+        </div>
+        <div class="row rowOTP">
+            <div class="col-2">
 
             </div>
-            <div class="col-1"></div>
+            <div class="col-8">
+                <div class="alert alert-info">
+                    <h5 class="alert-heading">Sign Up Process (2/3) - Enter OTP</h5>
+                    <hr class="rule">
+                    <p class="contentOTP">An OTP is sent to your E-mail Address, please enter it in box given below</p>
+                    <label for="otp">Enter OTP</label>
+                    <form>
+                        <div class="form-group">
+                            <input class="form-control" id="otp" name="otp" placeholder="Enter OTP" type="text">
+                            <br><br>
+                            <input type="submit" class="btn btn-primary submitButton" value="Submit">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
+        <div class="row rowPassword">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8">
+                <div class="alert alert-info">
+                    <h5 class="alert-heading">Sign Up Process (3/3) - Enter Password</h5>
+                    <hr class="rule">
+                    <p class="contentPassword">Kindly Enter your Password you want to keep for your account</p>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="password">Enter Password</label>
+                            <input class="form-control" id="password" name="password" placeholder="Enter Password" type="text">
+                            <br>
+                            <label for="re-password">Re-Enter Password</label>
+                            <input class="form-control" id="re-password" name="re-password" placeholder="Re-Enter Password" type="text"><br><br>
+                            <input type="submit" class="btn btn-primary submitButton" value="Submit">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
 
 
 

@@ -1,57 +1,4 @@
-body {
-    background-color: #F2F26B;
-}
-
-.mainLogo {
-    width: 25vw;
-}
-
-.navbar {
-    border-bottom: 1px solid rgba(45, 5, 147, 0.8);
-}
-
-.collapse .navbar-nav .nav-item .nav-link {
-    background-color: transparent;
-    color: black;
-    font-size: 1.75vw;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 5px;
-}
-
-.collapse .navbar-nav .nav-item .nav-link:hover {
-    color: #4FC806;
-}
-
-.toggler {
-    width: 20px;
-    height: 5px;
-    background-color: #4FC806;
-    margin: 3px 0;
-}
-
-.mainLogo {
-    width: 25vw;
-}
-
-.nav-link {
-    font-size: 1.75vw;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: #4FC806;
-}
-
-.nav-link:hover {
-    color: #3B9106;
-}
-
-.toggler {
-    width: 20px;
-    height: 5px;
-    background-color: #4FC806;
-    margin: 3px 0;
-}
-
+@import url("index.css");
 .signUpForm {
     grid-area: f;
 }
@@ -69,7 +16,8 @@ body {
 .btn-primary:focus,
 .btn-primary.focus {
     background-color: transparent;
-    color: #5DCB1A;
+    color: black;
+    ;
     border: 1px solid #5DCB1A;
 }
 
@@ -87,6 +35,24 @@ body {
     position: fixed;
     bottom: 0;
     border: 1px solid black;
+}
+
+.alert-info {
+    color: black;
+    background-color: rgba(93, 203, 26, 0.25);
+    border: 1px solid #5DCB1A;
+    border-radius: 10px;
+}
+
+.rowEmail,
+.rowOTP,
+.rowPassword {
+    margin-top: 2vh;
+}
+
+.rowOTP,
+.rowPassword {
+    display: none;
 }
 
 
@@ -129,7 +95,8 @@ body {
     .form-control {
         font-size: 1.5vw;
     }
-    .signUpButton {
+    .signUpButton,
+    .submitButton {
         font-size: 2vw;
     }
 }
@@ -172,7 +139,8 @@ body {
     .form-control {
         font-size: 3vw;
     }
-    .signUpButton {
+    .signUpButton,
+    .submitButton {
         font-size: 4vw;
     }
 }
@@ -187,7 +155,8 @@ body {
     .form-control {
         font-size: 4vw;
     }
-    .signUpButton {
+    .signUpButton,
+    .submitButton {
         font-size: 5vw;
     }
 }
