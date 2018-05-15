@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        moodCafe - Online Mental Wellness Service
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="book.css">
+
+</head>
+
+<body>
+    <nav class="navbar bg-light navbar-expand-lg">
+        <a href="index.html" class="navbar-brand"><img src="moodcafeLogo.png" class="mainLogo"></a>
+        <button class="collapseToggler btn d-lg-none d-xl-none" data-target="#navbarCollapse" data-toggle="collapse">
+        <div class="toggler"></div>
+        <div class="toggler"></div>
+
+        <div class="toggler"></div>
+
+    </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Experts</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Personality Test</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Log In</a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <div class="row rowBooking">
+        <div class="col-1">
+
+        </div>
+        <div class="col-10 bookingHeading">
+            Booking Details for "Expert Name"
+        </div>
+        <div class="col-1"></div>
+    </div>
+    <div class="row rowBooking">
+        <div class="col-2">
+
+        </div>
+        <div class="col-8 bookingOptions">
+            Mode of Communication Available
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row bookingChoices">
+
+        <div class="col-md-2 col-lg-2 col-xl-2">
+
+        </div>
+        <div class="col-sm-3 col-3 col-md-2 col-lg-2 col-xl-2 choice">
+            <button type="button" class="btn btn-block btn-primary choiceButton">in Person</button> Rs. 1000/session
+        </div>
+        <div class="col-sm-3 col-3 col-md-2 col-lg-2 col-xl-2 choice">
+            <button type="button" class="btn btn-block btn-primary choiceButton">Video chat</button> Rs. 700/session
+
+        </div>
+
+        <div class="col-sm-3 col-3 col-md-2 col-lg-2 col-xl-2 choice">
+            <button type="button" class="btn btn-block btn-primary choiceButton">Audio chat</button> Rs. 500/session</div>
+        <div class="col-sm-3 col-3 col-md-2 col-lg-2 col-xl-2 choice">
+            <button type="button" class="btn btn-block btn-primary choiceButton">Text chat</button> Rs. 400/session
+        </div>
+
+
+        <div class="col-md-2 col-lg-2 col-xl-2">
+
+        </div>
+    </div>
+    <div class="row bookDetails">
+        <div class="col-2">
+
+        </div>
+        <div class="col-8">
+            <div class="alert alert-info" id="inPerson">
+                <h5 class="alert-heading">in Person Booking</h5>
+                <hr class="rule">
+                <p class="content">Clinic Details: Location of Clinic
+
+                    <br> </p>
+            </div>
+            <div class="alert alert-info" id="bookingDateTime">
+                <h5 class="alert-heading">Select Date and Time</h5>
+                <hr class="rule">
+                <h6 class="alert-heading">Total Amount Payable: </h6>
+                <hr class="rule">
+                <br>
+                <div class="selectDate">
+                    <div class="selectDateCell">
+                        <p class="selectText">Select date</p>
+                    </div>
+                    <div class="selectDateCell"><button type="button" class="btn btn-primary optionButton">Day 1</button></div>
+
+                    <div class="selectDateCell"><button type="button" class="btn btn-primary optionButton">Day 2</button></div>
+                    <div class="selectDateCell"><button type="button" class="btn btn-primary optionButton">Day 3</button></div>
+
+                    <div class="selectDateCell"><button type="button" class="btn btn-primary optionButton">Day 4</button></div>
+                    <div class="selectDateCell"><button type="button" class="btn btn-primary optionButton">Day 5</button></div>
+
+                    <div class="selectDateCell"><button type="button" class="btn btn-primary optionButton">Day 6</button></div>
+                    <div class="selectDateCell"><button type="button" class="btn btn-primary optionButton">Day 7</button></div>
+                </div><br>
+                <hr class="rule">
+                <br>
+                <div class="selectTime">
+                    <div class="selectTimeCell">
+                        <p class="selectText">Select time</p>
+                    </div>
+                    <div class="selectTimeCell"><button type="button" class="btn btn-primary optionButton">2 - 3 pm</button></div>
+
+                    <div class="selectTimeCell"><button type="button" class="btn btn-primary optionButton">5 - 6 pm</button></div>
+                    <div class="selectTimeCell"><button type="button" class="btn btn-primary optionButton">7 - 8 pm</button></div>
+
+
+                </div>
+
+                <br>
+                <hr class="rule ">
+                <div class="confirm">
+
+                    <div class="confirmOption"><button type="button " class="btn btn-primary" id="confirmButton">Confirm</button></div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row confirmBooking">
+            <div class="col-2">
+
+            </div>
+            <div class="col-8">
+                <div class="alert alert-info" id="confirmBookingDialog">
+                    <h5 class="alert-heading">Booking Confirmation</h5>
+                    <hr class="rule">
+                    <p class="content">Congratulations!!! your booking has been confirmed. Other details are as below
+
+                        <br> </p>
+                    <div class="otherDetails">
+                        <div class="typeDetail">Mode of Communication</div>
+                        <div class="contentDetail">-----</div>
+                        <div class="typeDetail">Date of Session</div>
+                        <div class="contentDetail">-----</div>
+                        <div class="typeDetail">Time of Session</div>
+                        <div class="contentDetail">-----</div>
+                        <div class="typeDetail">Place</div>
+                        <div class="contentDetail">-----</div>
+                        <div class="typeDetail">Total Amount Paid</div>
+                        <div class="contentDetail">-----</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="footerSub">
+            <div class="col">
+                Footer here
+            </div>
+            <div class="col">Footer here</div>
+            <div class="col">Footer here</div>
+        </div>
+    </div>
+</body>
+<script src="book.js"></script>
+
+</html>

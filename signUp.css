@@ -55,6 +55,14 @@
     display: none;
 }
 
+.footer {
+    position: relative;
+}
+
+.footerSub {
+    position: absolute;
+}
+
 
 /* all media queries here */
 
