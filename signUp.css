@@ -1,0 +1,193 @@
+body {
+    background-color: #F2F26B;
+}
+
+.mainLogo {
+    width: 25vw;
+}
+
+.navbar {
+    border-bottom: 1px solid rgba(45, 5, 147, 0.8);
+}
+
+.collapse .navbar-nav .nav-item .nav-link {
+    background-color: transparent;
+    color: black;
+    font-size: 1.75vw;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #4FC806;
+}
+
+.toggler {
+    width: 20px;
+    height: 5px;
+    background-color: #4FC806;
+    margin: 3px 0;
+}
+
+.mainLogo {
+    width: 25vw;
+}
+
+.nav-link {
+    font-size: 1.75vw;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #4FC806;
+}
+
+.nav-link:hover {
+    color: #3B9106;
+}
+
+.toggler {
+    width: 20px;
+    height: 5px;
+    background-color: #4FC806;
+    margin: 3px 0;
+}
+
+.signUpForm {
+    grid-area: f;
+}
+
+.btn-primary {
+    background-color: #4FC806;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    margin: auto;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus {
+    background-color: transparent;
+    color: #5DCB1A;
+    border: 1px solid #5DCB1A;
+}
+
+.btn {
+    padding: 0;
+}
+
+.form-control:focus {
+    border-color: #3B9106;
+    box-shadow: 0 0 4px 0.2rem rgba(59, 145, 6, 0.75);
+}
+
+.footer {
+    font-size: 1.5vw;
+    position: fixed;
+    bottom: 0;
+    border: 1px solid black;
+}
+
+
+/* all media queries here */
+
+@media(min-width:992px) {
+    .collapse .navbar-nav .nav-item .nav-link {
+        background-color: #4FC806;
+        color: black;
+        border: 1px solid black;
+    }
+    .collapse .navbar-nav .nav-item .nav-link:hover {
+        color: #4FC806;
+        background-color: transparent;
+        border: 1px solid #4FC806;
+    }
+}
+
+@media(min-width:768px) {
+    .signUpRow {
+        display: grid;
+        grid-template-columns: repeat(3, 30vw);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "h h h" "e f f";
+        justify-content: space-evenly;
+    }
+    .signUpHeading {
+        grid-area: h;
+        display: flex;
+        margin: auto;
+        font-size: 3vw;
+    }
+    .signUpEmail {
+        grid-area: e;
+        font-size: 2vw;
+    }
+    .signUpForm {
+        grid-area: f;
+    }
+    .form-control {
+        font-size: 1.5vw;
+    }
+    .signUpButton {
+        font-size: 2vw;
+    }
+}
+
+@media(max-width:768px) {
+    .signUpRow {
+        display: grid;
+        grid-template-columns: repeat(1, 65vw);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "h" "e" "f";
+        justify-content: space-evenly;
+    }
+    .signUpHeading {
+        grid-area: h;
+        display: flex;
+        margin: auto;
+        font-size: 4vw;
+    }
+    .signUpEmail {
+        grid-area: e;
+        font-size: 3vw;
+        display: flex;
+        margin: auto;
+    }
+    .form-control {
+        font-size: 2.5vw;
+    }
+    .signUpForm {
+        grid-area: f;
+    }
+}
+
+@media (max-width:1000px) and (min-width:500px) {
+    .signUpHeading {
+        font-size: 5vw;
+    }
+    .signUpEmail {
+        font-size: 4vw;
+    }
+    .form-control {
+        font-size: 3vw;
+    }
+    .signUpButton {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width:500px) {
+    .signUpHeading {
+        font-size: 6vw;
+    }
+    .signUpEmail {
+        font-size: 5vw;
+    }
+    .form-control {
+        font-size: 4vw;
+    }
+    .signUpButton {
+        font-size: 5vw;
+    }
+}
