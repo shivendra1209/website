@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        moodCafe - Online Mental Wellness Service
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="userDash.css">
+
+</head>
+
+<body>
+    <!-- Navbar begins, navigation bar... -->
+    <nav class="navbar bg-light navbar-expand-lg">
+        <a href="index.html" class="navbar-brand"><img src="moodcafeLogo.png" class="mainLogo"></a>
+        <button class="collapseToggler btn d-lg-none d-xl-none" data-target="#navbarCollapse" data-toggle="collapse">
+        <div class="toggler"></div>
+        <div class="toggler"></div>
+
+        <div class="toggler"></div>
+
+    </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Experts</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Personality Test</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Log In</a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navbar ends here, above code is common to all pages... -->
+    <!-- user dashboard heading row -->
+    <div class="container">
+        <div class="row userHeadingRow">
+            <div class="col-1">
+
+            </div>
+            <div class="col-10 userHeading">
+                User Dashboard
+            </div>
+            <div class="col-1">
+
+            </div>
+        </div>
+        <!-- giving user dashboard options here  -->
+        <div class="row userDashOptions">
+            <div class="profile">
+                <!-- clicking profile will launch modal -->
+                <button type="button" class="btn btn-primary btn-block sessionButton" data-toggle="modal" data-target="#profile">Profile</button>
+            </div>
+            <div class="settings">
+                <!-- clicking settings will launch modal to settings menu -->
+                <button type="button" class="btn btn-primary btn-block sessionButton" data-toggle="modal" data-target="#settings">Settings</button>
+
+            </div>
+            <div class="logout">
+                <button type="button" class="btn btn-primary btn-block sessionButton">Log Out</button>
+
+            </div>
+            <div class="sessions">
+                My Sessions
+            </div>
+            <div class="upcomingSessions">
+                <button type="button" class="btn btn-primary btn-block sessionButton" data-toggle="modal" data-target="#upcoming">Upcoming<br>Sessions</button>
+
+            </div>
+            <div class="completedSessions">
+                <button type="button" class="btn btn-primary btn-block sessionButton" data-toggle="modal" data-target="#completed">Completed<br>Sessions</button>
+
+            </div>
+            <div class="myExperts">
+                <button type="button" class="btn btn-primary btn-block sessionButton" data-toggle="modal" data-target="#expert">My<br>Experts</button>
+
+            </div>
+            <div class="bookSession">
+                Want to seek Expert help??? Book your Session now.
+
+            </div>
+            <div class="bookSessionButtonDiv">
+                <button class="btn btn-primary bookSessionButton">Book Session</button>
+            </div>
+        </div>
+        <div class="modal fade" id="profile">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- profile section contains six particulars to show dob, phone no, email, username, gender, occupation -->
+                    <div class="modal-header">
+                        My Profile
+                    </div>
+                    <div class="modal-body">
+                        <div class="userName">User Name</div>
+                        <div><img src="expert.png" class="userImage"></div>
+                        <div class="alert alert-info">
+                            <div class="alert-heading">User Information</div>
+                            <div class="userDetails">
+                                <div class="typeDetail">Date of Birth</div>
+                                <div class="contentDetail">-----</div>
+                                <div class="typeDetail">Contact Number</div>
+                                <div class="contentDetail">-----</div>
+                                <div class="typeDetail">Email-id</div>
+                                <div class="contentDetail">-----</div>
+                                <div class="typeDetail">Username</div>
+                                <div class="contentDetail">-----</div>
+                                <div class="typeDetail">Gender</div>
+                                <div class="contentDetail">-----</div>
+                                <div class="typeDetail">Occupation</div>
+                                <div class="contentDetail">-----</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="settings">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- change phone no, email, username, password, occupation -->
+                    <div class="modal-header">
+                        Settings
+                    </div>
+                    <div class="modal-body">
+                        <div class="userName">User Name</div>
+                        <div><img src="expert.png" class="userImage"></div>
+                        <div class="alert alert-info">
+                            <div class="alert-heading">Change User Information</div>
+                            <div class="userDetailsChange">
+
+                                <div class="typeDetail">Contact Number</div>
+                                <div class="contentDetail"><button class="btn btn-primary changeButton">Change</button></div>
+                                <div class="change">
+                                    Change Contact Number Section
+                                </div>
+                                <div class="typeDetail">Email-id</div>
+                                <div class="contentDetail"><button class="btn btn-primary changeButton">Change</button></div>
+                                <div class="change">
+                                    Change E-mail id Section
+                                </div>
+                                <div class="typeDetail">Username</div>
+                                <div class="contentDetail"><button class="btn btn-primary changeButton">Change</button></div>
+                                <div class="change">
+                                    Change Username Section
+                                </div>
+                                <div class="typeDetail">Password</div>
+                                <div class="contentDetail"><button class="btn btn-primary changeButton">Change</button></div>
+                                <div class="change">
+                                    Change Password Section
+                                </div>
+                                <div class="typeDetail">Occupation</div>
+                                <div class="contentDetail"><button class="btn btn-primary changeButton">Change</button></div>
+                                <div class="change">
+                                    Change Occupation Section
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="upcoming">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- contains list of upcoming sessions, including details like date, time, type, expert involved, place -->
+                    <div class="modal-header">
+                        Upcoming Session(s)
+                    </div>
+                    <div class="modal-body">
+                        <div class="userName">User Name</div>
+                        <div><img src="expert.png" class="userImage"></div>
+                        <div class="alert alert-info">
+                            <div class="alert-heading">Session 1</div>
+                            <div class="upcomingSessionDetails">
+
+                                <div class="typeDetail">Date</div>
+                                <div class="contentDetail">-----</div>
+
+                                <div class="typeDetail">Expert</div>
+                                <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                                <div class="typeDetail">Time</div>
+                                <div class="contentDetail">-----</div>
+
+                                <div class="typeDetail">Session Type</div>
+                                <div class="contentDetail">-----</div>
+
+                                <div class="typeDetail">Place</div>
+                                <div class="contentDetail">-----</div>
+
+                            </div>
+                        </div>
+                        <div class="alert alert-info">
+                            <div class="alert-heading">Session 2</div>
+                            <div class="upcomingSessionDetails">
+
+                                <div class="typeDetail">Date</div>
+                                <div class="contentDetail">-----</div>
+
+                                <div class="typeDetail">Expert</div>
+                                <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                                <div class="typeDetail">Time</div>
+                                <div class="contentDetail">-----</div>
+
+                                <div class="typeDetail">Session Type</div>
+                                <div class="contentDetail">-----</div>
+
+                                <div class="typeDetail">Place</div>
+                                <div class="contentDetail">-----</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="completed">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- contains list of completed sessions, including details like date, time, type, expert involved, place -->
+                    <div class="modal-header">
+                        Completed Session(s)
+                    </div>
+                    <div class="modal-body">
+                        <div class="userName">User Name</div>
+                        <div><img src="expert.png" class="userImage"></div>
+                        <div class="alert alert-info">
+                            <!-- here is list of sessions, two sessions are written just for understanding formatting -->
+                            <div class="alert-heading">Session 1</div>
+                            <div class="completedSessionDetails">
+
+                                <div class="typeDetail">Date</div>
+                                <div class="contentDetail">-----</div>
+
+                                <div class="typeDetail">Expert</div>
+                                <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                                <div class="typeDetail">Time</div>
+                                <div class="contentDetail">-----</div>
+
+                                <div class="typeDetail">Session Type</div>
+                                <div class="contentDetail">-----</div>
+
+                                <div class="typeDetail">Place</div>
+                                <div class="contentDetail">-----</div>
+                                <div class="feedback"><button class="btn btn-primary feedbackButton">Give Feedback</button></div>
+                            </div>
+                        </div>
+                        <div class="alert alert-info">
+                            <div class="alert-heading">Session 2</div>
+                            <div class="completedSessionDetails">
+
+                                <div class="typeDetail">Date</div>
+                                <div class="contentDetail">-----</div>
+
+                                <div class="typeDetail">Expert</div>
+                                <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                                <div class="typeDetail">Time</div>
+                                <div class="contentDetail">-----</div>
+
+                                <div class="typeDetail">Session Type</div>
+                                <div class="contentDetail">-----</div>
+
+                                <div class="typeDetail">Place</div>
+                                <div class="contentDetail">-----</div>
+                                <div class="feedback"><button class="btn btn-primary feedbackButton">Give Feedback</button></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="expert">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        My Expert(s)
+                    </div>
+                    <div class="modal-body">
+                        <div class="userName">User Name</div>
+                        <div><img src="expert.png" class="userImage"></div>
+                        <div class="alert alert-info">
+                            <!-- here is list of experts, two experts are written just for understanding formatting -->
+                            <div class="alert-heading">Expert 1</div>
+                            <div class="myExpertsDetails">
+                                <div class="myExpertName">ABC</div>
+                                <div class="myExpertImage"><img src="expert.png" class="myExpertImageImg"></div>
+                                <div class="myExpertViewProfile"><button class="btn btn-primary viewProfileButton">View Profile</button></div>
+
+
+                            </div>
+                        </div>
+                        <div class="alert alert-info">
+                            <!-- here is list of experts, two experts are written just for understanding formatting -->
+                            <div class="alert-heading">Expert 2</div>
+                            <div class="myExpertsDetails">
+                                <div class="myExpertName">ABC</div>
+                                <div class="myExpertImage"><img src="expert.png" class="myExpertImageImg"></div>
+                                <div class="myExpertViewProfile"><button class="btn btn-primary viewProfileButton">View Profile</button></div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="userDash.js"></script>
+
+</html>

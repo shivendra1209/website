@@ -1,0 +1,258 @@
+@import url("index.css");
+@import url("signUp.css");
+@import url("book.css");
+.userHeading {
+    display: flex;
+    margin: auto;
+    font-size: 2vw;
+    font-weight: 600;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    color: black;
+    background-color: #4FC806;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 50vw;
+    font-weight: 700;
+}
+
+.userHeading:hover {
+    color: black;
+    border-color: black;
+    border-width: 2px;
+    background-color: transparent;
+    box-shadow: 0 0 0 0.2rem rgba(79, 200, 6, 0.8);
+}
+
+.userHeadingRow {
+    margin-top: 5vh;
+}
+
+.userDashOptions {
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "p s l" "ss ss ss" "u c m";
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile {
+    grid-area: p;
+}
+
+.settings {
+    grid-area: s;
+}
+
+.logout {
+    grid-area: l;
+}
+
+.sessions {
+    grid-area: ss;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    align-self: center;
+    font-weight: 600;
+}
+
+.upcomingSessions {
+    padding-top: 2vh;
+    grid-area: u;
+}
+
+.completedSessions {
+    grid-area: c;
+    padding-top: 2vh;
+}
+
+.bookSession {
+    padding-top: 15px;
+    grid-column-end: span 3;
+    font-size: 2vw;
+    display: flex;
+    margin: auto;
+    font-weight: 600;
+}
+
+.bookSessionButtonDiv {
+    grid-column-end: span 3;
+}
+
+.myExperts {
+    grid-area: m;
+    padding-top: 2vh;
+}
+
+.sessionButton,
+.sessions,
+.bookSessionButton {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.btn-primary {
+    border-radius: 50px;
+}
+
+.bookSessionButton {
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 15px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userName {
+    text-align: center;
+    font-size: 1.75vw;
+    margin-bottom: 10px;
+}
+
+.userImage {
+    width: 10vw;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.userDetails {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.userDetailsChange {
+    display: grid;
+    grid-auto-rows: 10;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.upcomingSessionDetails {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.completedSessionDetails {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.myExpertsDetails {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+    grid-auto-flow: row;
+}
+
+.myExpertName {
+    display: flex;
+    margin: auto;
+}
+
+.myExpertImage {
+    grid-row-end: span 2;
+}
+
+.myExpertImageImg {
+    width: 8vw;
+    display: flex;
+    margin: auto;
+}
+
+.viewProfileButton {
+    padding: 3px;
+}
+
+.feedback {
+    grid-column-end: span 2;
+    justify-self: space-evenly;
+    align-self: center;
+}
+
+.profileExpert,
+.feedbackButton {
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.change {
+    grid-column-end: span 2;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+}
+
+.changeButton {
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.typeDetail,
+.contentDetail {
+    font-size: 1.25vw;
+}
+
+.alert-heading {
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-danger {
+    padding: 5px;
+}
+
+.modal-header {
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*all media queries here...*/
+
+@media (max-width:1000px) and (min-width:500px) {
+    .userHeading {
+        font-size: 2.75vw;
+    }
+    .sessionButton,
+    .sessions,
+    .bookSessionButton,
+    .bookSession {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width:500px) {
+    .userHeading {
+        font-size: 3.5vw;
+    }
+    .sessionButton,
+    .sessions,
+    .bookSessionButton,
+    .bookSession {
+        font-size: 3vw;
+    }
+}
