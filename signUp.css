@@ -24,6 +24,28 @@
     padding: 0;
 }
 
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #5DCB1A;
+    background-color: black;
+    border-color: #5DCB1A;
+    box-shadow: 0 0 0 0.2rem black;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: black;
+    background-color: #4FC806;
+    border-color: black;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.4rem rgba(79, 200, 6, 0.8);
+}
+
 
 /* formatting border and shadow around form box when selected */
 

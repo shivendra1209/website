@@ -156,6 +156,9 @@ body {
 
 .footerSub {
     position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
 }
 
 
@@ -174,6 +177,29 @@ body {
     background-color: transparent;
     color: #5DCB1A;
     border: 1px solid #5DCB1A;
+    box-shadow: 0 0 0 0.2rem rgba(79, 200, 6, 0.8);
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #5DCB1A;
+    background-color: black;
+    border-color: #5DCB1A;
+    box-shadow: 0 0 0 0.2rem black;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: black;
+    background-color: #4FC806;
+    border-color: black;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.4rem rgba(79, 200, 6, 0.8);
 }
 
 .btn {
@@ -223,6 +249,14 @@ body {
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 50vw;
+}
+
+.expertsHeading:hover {
+    color: black;
+    border-color: black;
+    border-width: 2px;
+    background-color: transparent;
+    box-shadow: 0 0 0 0.2rem rgba(79, 200, 6, 0.8);
 }
 
 
