@@ -1,14 +1,25 @@
+/*adjusting background color of whole page*/
+
 body {
     background-color: #F2F26B;
 }
+
+
+/*size of moodcafe logo*/
 
 .mainLogo {
     width: 25vw;
 }
 
+
+/* border on navigation bar at bottom */
+
 .navbar {
     border-bottom: 1px solid rgba(45, 5, 147, 0.8);
 }
+
+
+/* formatting on links in navigation bar */
 
 .collapse .navbar-nav .nav-item .nav-link {
     background-color: transparent;
@@ -30,6 +41,9 @@ body {
     margin: 3px 0;
 }
 
+
+/* formatting  signup and personality section here */
+
 .signup,
 .personality {
     border: 1px solid rgb(45, 5, 147);
@@ -39,18 +53,30 @@ body {
     font-weight: 600;
 }
 
+
+/* formatting on row of personality and signup section */
+
 .testRow {
     margin-top: 10px;
 }
+
+
+/* formatting on horizontal rule */
 
 .rule,
 .ruleExpert {
     background-color: rgba(45, 5, 147, 0.8);
 }
 
+
+/* rule within expert section, i.e. among about, expertise and experience section */
+
 .ruleExpert {
     margin: 0;
 }
+
+
+/* formatting know more link */
 
 .knowMore {
     text-decoration: none;
@@ -73,14 +99,23 @@ body {
     color: rgba(79, 200, 6, 1);
 }
 
+
+/* formatting know more section, aligning in center */
+
 .linkCol {
     text-align: center;
 }
+
+
+/* expert title  consisting of expert name */
 
 .expertTitle {
     font-size: 2.25vw;
     text-align: center;
 }
+
+
+/* various headings in expert section */
 
 .expertHeading {
     font-size: 1.75vw;
@@ -88,9 +123,15 @@ body {
     font-style: italic;
 }
 
+
+/* various contents in expert section */
+
 .expertContent {
     font-size: 1.25vw;
 }
+
+
+/* book session button in top expert section */
 
 .expertButton {
     font-size: 2vw;
@@ -98,14 +139,16 @@ body {
     margin-bottom: 1vw;
 }
 
+
+/* image of expert aligning in center */
+
 .expertImage {
     align-items: center;
     vertical-align: middle;
 }
 
-.card-text {
-    float: right;
-}
+
+/* footer section, keeping it the end of page */
 
 .footer {
     position: relative;
@@ -114,6 +157,9 @@ body {
 .footerSub {
     position: absolute;
 }
+
+
+/* formatting button in whole webpage */
 
 .btn-primary {
     background-color: #4FC806;
@@ -134,6 +180,9 @@ body {
     padding: 0;
 }
 
+
+/* formatting all links to have no underlining in any case */
+
 .linkSignup,
 .linkPersonality,
 .linkSignup:hover,
@@ -142,6 +191,9 @@ body {
 .linkSignup:visited {
     text-decoration: none;
 }
+
+
+/* formatting button in signup and personality section */
 
 .signUpButton,
 .personalityButton {
@@ -155,6 +207,9 @@ body {
     margin-right: 1vw;
     margin-left: 1vw;
 }
+
+
+/* meet our experts heading */
 
 .expertsHeading {
     display: flex;
@@ -174,6 +229,7 @@ body {
 /*all media queries here...*/
 
 @media(min-width:768px) {
+    /* applying grid system on experts section */
     .expertsRow {
         display: grid;
         grid-template-rows: 1fr;
@@ -181,24 +237,29 @@ body {
         grid-template-areas: "e1 e2 e3";
         justify-content: space-evenly;
     }
+    /* first expert */
     .expert1 {
         grid-area: e1;
         border: 1px solid rgb(45, 5, 147);
     }
+    /* second expert */
     .expert2 {
         grid-area: e2;
         border: 1px solid rgb(45, 5, 147);
     }
+    /* third expert */
     .expert3 {
         grid-area: e3;
         border: 1px solid rgb(45, 5, 147);
     }
+    /* expertImages */
     .expertImage {
         width: 15vw;
         margin-bottom: 0px;
         display: flex;
         margin: auto;
     }
+    /* margin formatting on personality and signup section */
     .signup,
     .personality {
         margin-top: 4vh;
@@ -239,6 +300,9 @@ body {
         margin-top: 4vh;
     }
 }
+
+
+/* font size conditions on devices with maximum width of 1000px */
 
 @media(max-width: 1000px) {
     .nav-link {

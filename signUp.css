@@ -1,7 +1,6 @@
 @import url("index.css");
-.signUpForm {
-    grid-area: f;
-}
+
+/* formatting buttons in the page */
 
 .btn-primary {
     background-color: #4FC806;
@@ -25,6 +24,9 @@
     padding: 0;
 }
 
+
+/* formatting border and shadow around form box when selected */
+
 .form-control:focus {
     border-color: #3B9106;
     box-shadow: 0 0 4px 0.2rem rgba(59, 145, 6, 0.75);
@@ -37,6 +39,9 @@
     border: 1px solid black;
 }
 
+
+/* formatting alert box used for sign up */
+
 .alert-info {
     color: black;
     background-color: rgba(93, 203, 26, 0.25);
@@ -44,11 +49,17 @@
     border-radius: 10px;
 }
 
+
+/* various rows related to particular step as indicated by name */
+
 .rowEmail,
 .rowOTP,
 .rowPassword {
     margin-top: 2vh;
 }
+
+
+/* initially both the steps two and three will be kept hidden and not being displayed */
 
 .rowOTP,
 .rowPassword {
@@ -79,61 +90,24 @@
     }
 }
 
+.signUpButton,
+.submitButton {
+    font-size: 2vw;
+}
+
+
+/* all media queries here... 
+all queries on font-sizes on various screen sizes*/
+
 @media(min-width:768px) {
-    .signUpRow {
-        display: grid;
-        grid-template-columns: repeat(3, 30vw);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "h h h" "e f f";
-        justify-content: space-evenly;
-    }
-    .signUpHeading {
-        grid-area: h;
-        display: flex;
-        margin: auto;
-        font-size: 3vw;
-    }
-    .signUpEmail {
-        grid-area: e;
-        font-size: 2vw;
-    }
-    .signUpForm {
-        grid-area: f;
-    }
     .form-control {
         font-size: 1.5vw;
-    }
-    .signUpButton,
-    .submitButton {
-        font-size: 2vw;
     }
 }
 
 @media(max-width:768px) {
-    .signUpRow {
-        display: grid;
-        grid-template-columns: repeat(1, 65vw);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: "h" "e" "f";
-        justify-content: space-evenly;
-    }
-    .signUpHeading {
-        grid-area: h;
-        display: flex;
-        margin: auto;
-        font-size: 4vw;
-    }
-    .signUpEmail {
-        grid-area: e;
-        font-size: 3vw;
-        display: flex;
-        margin: auto;
-    }
     .form-control {
         font-size: 2.5vw;
-    }
-    .signUpForm {
-        grid-area: f;
     }
 }
 

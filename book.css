@@ -1,94 +1,158 @@
-@import url("index.css");
-@import url("signUp.css");
-.bookingHeading {
-    font-size: 2.5vw;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 5vh;
-}
-
-.bookingOptions {
-    font-size: 2vw;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 5vh;
-}
-
-.choice {
-    font-size: 1.75vw;
-    margin-bottom: 5vh;
-    text-align: center;
-}
-
-.bookingChoices {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.selectDate {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 15px;
-}
-
-.selectText {
-    margin: 0;
-    text-align: center;
-    font-size: 1.25vw;
-    font-weight: 500;
-}
-
-.selectTime {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 15px;
-}
-
-.optionButton,
-.confirmButton {
-    padding: 5px;
-}
-
-.choiceButton {
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    padding-left: 5px;
-    display: flex;
-    justify-content: center;
-    font-size: 1.5vw;
-}
-
-.otherDetails {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    row-gap: 10px;
-}
-
-.typeDetail,
-.contentDetail {
-    text-align: center;
-    font-size: 1.5vw;
-}
-
-.typeDetail {
-    border-right: 1px solid black;
-}
-
-#inPerson,
-#bookingDateTime,
-#confirmBookingDialog {
-    display: none;
-}
-
-.footer {
-    position: relative;
-}
-
-.footerSub {
-    position: absolute;
-}
+ @import url("index.css");
+ @import url("signUp.css");
+ /* booking heading formatting */
+ 
+ .bookingHeading {
+     font-size: 2.5vw;
+     display: flex;
+     justify-content: space-evenly;
+     margin-bottom: 5vh;
+ }
+ 
+ .alert-heading {
+     font-size: 2.5vw;
+ }
+ 
+ .content {
+     font-size: 2vw;
+ }
+ /* select date and time text */
+ 
+ p.selectText {
+     font-size: 2vw;
+     margin: 0;
+     text-align: center;
+     font-weight: 500;
+ }
+ /* mode of communication format */
+ 
+ .bookingOptions {
+     font-size: 2vw;
+     display: flex;
+     justify-content: space-evenly;
+     margin-bottom: 5vh;
+ }
+ /* four choices highlighted here */
+ 
+ .choice {
+     font-size: 1.75vw;
+     margin-bottom: 5vh;
+     text-align: center;
+     font-weight: 500;
+ }
+ /* row consisting all choices buttons */
+ 
+ .bookingChoices {
+     display: flex;
+     justify-content: space-evenly;
+ }
+ /* div for date options */
+ 
+ .selectDate {
+     display: grid;
+     grid-template-rows: repeat(4, 1fr);
+     grid-template-columns: repeat(2, 1fr);
+     row-gap: 15px;
+ }
+ /* div for time options */
+ 
+ .selectTime {
+     display: grid;
+     grid-template-rows: repeat(2, 1fr);
+     grid-template-columns: repeat(2, 1fr);
+     row-gap: 15px;
+ }
+ /* formatting on options and confirm buttons */
+ 
+ .optionButton,
+ .confirmButton {
+     padding: 5px;
+ }
+ /* choices button, four buttons */
+ 
+ .choiceButton {
+     border-top-left-radius: 1vw;
+     border-bottom-right-radius: 1vw;
+     border-top-right-radius: 0px;
+     border-bottom-left-radius: 0px;
+     padding-left: 5px;
+     display: flex;
+     justify-content: center;
+     font-size: 1.5vw;
+ }
+ /* booking confirmation taken as grid */
+ 
+ .otherDetails {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(5, 1fr);
+     row-gap: 10px;
+ }
+ /* booking confirmation table */
+ 
+ .typeDetail,
+ .contentDetail {
+     text-align: center;
+     font-size: 1.5vw;
+ }
+ /* separating detail and content in booking confirmation table */
+ 
+ .typeDetail {
+     border-right: 1px solid black;
+ }
+ 
+ .footer {
+     position: relative;
+ }
+ 
+ .footerSub {
+     position: absolute;
+ }
+ 
+ @media (max-width:1000px) and (min-width:500px) {
+     .bookingHeading,
+     .alert-heading {
+         font-size: 3vw;
+     }
+     .bookingOptions,
+     p.content,
+     h6.content {
+         font-size: 2.5vw;
+     }
+     .choiceButton {
+         font-size: 1.9vw;
+     }
+     .choice {
+         font-size: 2.2vw;
+     }
+     p.selectText {
+         font-size: 2.75vw;
+     }
+ }
+ 
+ @media (max-width:500px) {
+     .bookingHeading,
+     .alert-heading {
+         font-size: 4vw;
+     }
+     .bookingOptions,
+     p.content,
+     h6.content {
+         font-size: 3.25vw;
+     }
+     .choiceButton {
+         font-size: 2.5vw;
+     }
+     .choice {
+         font-size: 2.6vw;
+     }
+     p.selectText {
+         font-size: 3.25vw;
+     }
+ }
+ 
+ #inPerson,
+ #bookingDateTime,
+ #confirmBookingDialog {
+     display: none;
+ }
