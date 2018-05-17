@@ -1,0 +1,180 @@
+    @import url("index.css");
+    @import url("signUp.css");
+    @import url("book.css");
+    @import url("userDash.css");
+    .adminDashHeading {
+        display: flex;
+        margin: auto;
+        font-size: 2vw;
+        font-weight: 600;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+        color: black;
+        background-color: #4FC806;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        width: 50vw;
+        font-weight: 700;
+    }
+    
+    .adminDashHeading:hover {
+        color: black;
+        border-color: black;
+        border-width: 2px;
+        background-color: transparent;
+        box-shadow: 0 0 0 0.2rem rgba(79, 200, 6, 0.8);
+    }
+    
+    .adminHeadingRow {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    
+    .userDetails,
+    .expertDetails {
+        padding: 0px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .typeDetail {
+        border-right: 0px;
+        font-weight: 700;
+    }
+    
+    a,
+    a:hover,
+    a:visited,
+    a:active,
+    a:focus {
+        text-decoration: none;
+    }
+    
+    a {
+        color: black;
+    }
+    
+    a:hover {
+        color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .alert-info:hover {
+        background-color: rgba(93, 203, 26, 0.6);
+    }
+    
+    .alert-info {
+        position: relative;
+        width: 100%;
+    }
+    
+    .userDetails {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        width: 10vw;
+        border-radius: 15px;
+    }
+    
+    .alert-info:hover .image {
+        opacity: 0.3;
+    }
+    
+    .alert-info:hover .middle {
+        opacity: 1;
+    }
+    
+    .text {
+        background-color: #4FC806;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 1.5vw;
+    }
+    
+    .filter {
+        display: grid;
+        align-content: center;
+        row-gap: 10px;
+        justify-content: space-evenly;
+    }
+    
+    .searchUser,
+    .searchExpert {
+        grid-column-end: span 2;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5vw;
+        border-radius: 10px;
+    }
+    
+    .nameUser,
+    .ageUser,
+    .nameExpert,
+    .ageExpert {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    
+    .overflowUser,
+    .overflowExpert {
+        overflow-y: scroll;
+        height: 40vh;
+        margin-bottom: 10px;
+    }
+    
+    .searchUser,
+    .searchExpert {
+        font-size: 2vw;
+    }
+    /* all media queries here.. */
+    
+    @media(min-width: 767px) {
+        .adminDashboard {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-evenly;
+            align-content: center;
+            column-gap: 5vw;
+        }
+    }
+    
+    @media(max-width:767px) {
+        .adminDashboard {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 50vw;
+            justify-content: space-around;
+            column-gap: 5vw;
+        }
+    }
+    
+    @media(max-width:1000px) {
+        .adminDashHeading,
+        .searchUser,
+        .searchExpert {
+            font-size: 2.5vw;
+        }
+    }
+    
+    @media(max-width: 500px) {
+        .adminDashHeading,
+        .searchUser,
+        .searchExpert {
+            font-size: 3vw;
+        }
+    }
