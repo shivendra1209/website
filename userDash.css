@@ -1,4 +1,3 @@
-@import url("index.css");
 @import url("signUp.css");
 @import url("book.css");
 .userHeading {
@@ -16,6 +15,12 @@
     font-weight: 700;
 }
 
+.userName {
+    text-align: center;
+    font-size: 1.75vw;
+    margin-bottom: 10px;
+}
+
 .userHeading:hover {
     color: black;
     border-color: black;
@@ -26,63 +31,6 @@
 
 .userHeadingRow {
     margin-top: 5vh;
-}
-
-.userDashOptions {
-    display: grid;
-    grid-template-columns: repeat(3, 20vw);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: "p s l" "ss ss ss" "u c m";
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.profile {
-    grid-area: p;
-}
-
-.settings {
-    grid-area: s;
-}
-
-.logout {
-    grid-area: l;
-}
-
-.sessions {
-    grid-area: ss;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    align-self: center;
-    font-weight: 600;
-}
-
-.upcomingSessions {
-    padding-top: 2vh;
-    grid-area: u;
-}
-
-.completedSessions {
-    grid-area: c;
-    padding-top: 2vh;
-}
-
-.bookSession {
-    padding-top: 15px;
-    grid-column-end: span 3;
-    font-size: 2vw;
-    display: flex;
-    margin: auto;
-    font-weight: 600;
-}
-
-.bookSessionButtonDiv {
-    grid-column-end: span 3;
-}
-
-.myExperts {
-    grid-area: m;
-    padding-top: 2vh;
 }
 
 .sessionButton,
@@ -109,12 +57,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.userName {
-    text-align: center;
-    font-size: 1.75vw;
-    margin-bottom: 10px;
 }
 
 .userImage {
@@ -149,6 +91,16 @@
     align-items: center;
 }
 
+.scroll {
+    overflow-y: scroll;
+    height: 45vh;
+}
+
+.scroll:nth-child(3) {
+    overflow-y: scroll;
+    height: 30vh;
+}
+
 .completedSessionDetails {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
@@ -169,6 +121,7 @@
 .myExpertName {
     display: flex;
     margin: auto;
+    font-size: 1.5vw;
 }
 
 .myExpertImage {
@@ -243,6 +196,30 @@
     .bookSession {
         font-size: 2.5vw;
     }
+    .userName,
+    .myExpertName {
+        font-size: 2.25vw;
+    }
+    .modal-header {
+        font-size: 3vw;
+    }
+    .userImage {
+        width: 12.5vw;
+    }
+    .alert-heading {
+        font-size: 2vw;
+    }
+    .typeDetail,
+    .contentDetail,
+    .changeButton,
+    .profileExpert,
+    .feedbackButton,
+    .viewProfileButton {
+        font-size: 1.60vw;
+    }
+    .myExpertImageImg {
+        width: 10.5vw;
+    }
 }
 
 @media (max-width:500px) {
@@ -254,5 +231,93 @@
     .bookSessionButton,
     .bookSession {
         font-size: 3vw;
+    }
+    .userName,
+    .myExpertName {
+        font-size: 2.75vw;
+    }
+    .modal-header {
+        font-size: 3.5vw;
+    }
+    .userImage {
+        width: 15vw;
+    }
+    .alert-heading {
+        font-size: 2.5vw;
+    }
+    .typeDetail,
+    .contentDetail,
+    .changeButton,
+    .profileExpert,
+    .feedbackButton,
+    .viewProfileButton {
+        font-size: 1.95vw;
+    }
+    .myExpertImageImg {
+        width: 13vw;
+    }
+}
+
+@media(min-width:768px) {
+    .userDashOptions {
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "p s l" "ss ss ss" "u c m";
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .profile {
+        grid-area: p;
+    }
+    .settings {
+        grid-area: s;
+    }
+    .logout {
+        grid-area: l;
+    }
+    .sessions {
+        grid-area: ss;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        align-self: center;
+        font-weight: 600;
+    }
+    .upcomingSessions {
+        padding-top: 2vh;
+        grid-area: u;
+    }
+    .completedSessions {
+        grid-area: c;
+        padding-top: 2vh;
+    }
+    .bookSession {
+        padding-top: 15px;
+        grid-column-end: span 3;
+        font-size: 2vw;
+        display: flex;
+        margin: auto;
+        font-weight: 600;
+    }
+    .bookSessionButtonDiv {
+        grid-column-end: span 3;
+    }
+    .myExperts {
+        grid-area: m;
+        padding-top: 2vh;
+    }
+}
+
+@media(max-width:768px) {
+    .userDashOptions {
+        display: grid;
+        grid-template-columns: repeat(1, 50vw);
+        grid-template-rows: repeat(9, 1fr);
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .sessionButton {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
