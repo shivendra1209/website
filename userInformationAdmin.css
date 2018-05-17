@@ -1,0 +1,105 @@
+@import url('index.css');
+@import url('signUp.css');
+@import url('book.css');
+@import url('userDash.css');
+@import url('adminDash.css');
+.userDetailHeading {
+    display: flex;
+    margin: auto;
+    font-size: 2vw;
+    font-weight: 600;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    color: black;
+    background-color: #4FC806;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 50vw;
+    font-weight: 700;
+}
+
+.userDetailHeading:hover {
+    color: black;
+    border-color: black;
+    border-width: 2px;
+    background-color: transparent;
+    box-shadow: 0 0 0 0.2rem rgba(79, 200, 6, 0.8);
+}
+
+.userDetailHeadingRow {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.userDetailRow {
+    display: grid;
+    grid-template-rows: repeat(5, 5vw);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.profileDetail {
+    grid-column-end: span 3;
+    grid-row-end: span 5;
+}
+
+.upcomingDetail,
+.completedDetail,
+.expertDetail,
+.paymentDetail {
+    grid-column-end: span 3;
+    grid-row-end: span 5;
+}
+
+.userButtonDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.userButton {
+    display: flex;
+    justify-content: space-around;
+    width: 15vw;
+    border-radius: 5px;
+}
+
+.detailSection {
+    display: none;
+}
+
+.moreSessionButton {
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.headingButton {
+    border-radius: 10px;
+    font-size: 1.25vw;
+    padding: 5px;
+}
+
+.sessionHeading {
+    font-size: 1.5vw;
+}
+
+.active {
+    background-color: red !important;
+    color: white !important;
+}
+
+.cancel {
+    display: flex;
+    margin: auto;
+    grid-column-end: span 2;
+}
+
+.close {
+    display: flex;
+    margin: auto;
+    grid-column-end: span 2;
+}

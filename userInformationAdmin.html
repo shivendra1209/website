@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        moodCafe - Online Mental Wellness Service
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="userInformationAdmin.css">
+
+</head>
+
+<body>
+    <!-- Navbar begins, navigation bar... -->
+    <nav class="navbar bg-light navbar-expand-lg">
+        <a href="index.html" class="navbar-brand"><img src="moodcafeLogo.png" class="mainLogo"></a>
+        <button class="collapseToggler btn d-lg-none d-xl-none" data-target="#navbarCollapse" data-toggle="collapse">
+        <div class="toggler"></div>
+        <div class="toggler"></div>
+
+        <div class="toggler"></div>
+
+    </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Experts</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Personality Test</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Log In</a></li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row userDetailHeadingRow">
+            <div class="col-1">
+            </div>
+            <div class="col-10 userDetailHeading">'Name of User' - User Details </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row userDetailRow">
+            <div class="profileHeading"><button class="btn btn-primary headingButton">Profile</button></div>
+            <div class="sessionHeading">Sessions
+                <div class="sessionSubHeading"><button class="btn btn-primary headingButton">Upcoming Session</button></div>
+                <div class="sessionSubHeading"><button class="btn btn-primary headingButton">Completed Session</button></div>
+            </div>
+            <div class="expertHeading"><button class="btn btn-primary headingButton">Contacted Experts</button></div>
+            <div class="paymentHeading"><button class="btn btn-primary headingButton">Payment Details</button></div>
+            <div class="accountHeading"><button class="btn btn-primary headingButton">Account Details</button></div>
+            <div class="profileDetail detailSection">
+                <div class="alert alert-info">
+                    <div class="alert-heading">
+                        User Profile
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div class="typeDetail"><label for="name">Name</label></div>
+                    <div class="contentDetail"><input class="form-control" id="name" value="Current-Name"></div>
+                    <div class="typeDetail"><label for="dateOfBirth">Date of Birth</label></div>
+                    <div class="contentDetail"><input class="form-control" id="dateOfBirth" value="Current-DOB"></div>
+                    <div class="typeDetail"><label for="contact">Contact Number</label></div>
+                    <div class="contentDetail"><input class="form-control" id="contact" value="Current-MobileNo."></div>
+                    <div class="typeDetail"><label for="email">Email-id</label></div>
+                    <div class="contentDetail"><input class="form-control" id="email" value="Current-Email"></div>
+                    <div class="typeDetail"><label for="username">Username</label></div>
+                    <div class="contentDetail"><input class="form-control" id="username" value="Current-Username"></div>
+                    <div class="typeDetail"><label>Gender</label></div>
+                    <div class="userButtonDiv">
+                        <input class="form-control btn btn-primary userButton active" value="Male" type="button">
+                        <input class="form-control btn btn-primary userButton " value="Female" type="button">
+                        <input class="form-control btn btn-primary userButton " value="Other" type="button">
+                    </div>
+                </div>
+            </div>
+            <div class="upcomingDetail detailSection">
+                <div class="alert alert-info">
+                    <div class="alert-heading">
+                        Upcoming Sessions
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div class="alert alert-info">
+
+                        <div class="alert-heading">Session 1</div>
+                        <div class="upcomingSessionDetails">
+
+                            <div class="typeDetail">Date</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Expert</div>
+                            <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                            <div class="typeDetail">Time</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Session Type</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Place</div>
+                            <div class="contentDetail">-----</div>
+                            <div class="cancel">
+                                <button class="btn btn-danger cancelButton">cancel session</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="alert alert-info">
+
+                        <div class="alert-heading">Session 2</div>
+                        <div class="upcomingSessionDetails">
+
+                            <div class="typeDetail">Date</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Expert</div>
+                            <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                            <div class="typeDetail">Time</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Session Type</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Place</div>
+                            <div class="contentDetail">-----</div>
+                            <div class="cancel">
+                                <button class="btn btn-danger cancelButton">cancel session</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info">
+
+                        <div class="alert-heading">Session 3</div>
+                        <div class="upcomingSessionDetails">
+
+                            <div class="typeDetail">Date</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Expert</div>
+                            <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                            <div class="typeDetail">Time</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Session Type</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Place</div>
+                            <div class="contentDetail">-----</div>
+                            <div class="cancel">
+                                <button class="btn btn-danger cancelButton">cancel session</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info">
+
+                        <div class="alert-heading">Session 4</div>
+                        <div class="upcomingSessionDetails">
+
+                            <div class="typeDetail">Date</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Expert</div>
+                            <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                            <div class="typeDetail">Time</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Session Type</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Place</div>
+                            <div class="contentDetail">-----</div>
+                            <div class="cancel">
+                                <button class="btn btn-danger cancelButton">cancel session</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info">
+
+                        <div class="alert-heading">Session 5</div>
+                        <div class="upcomingSessionDetails">
+
+                            <div class="typeDetail">Date</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Expert</div>
+                            <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                            <div class="typeDetail">Time</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Session Type</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Place</div>
+                            <div class="contentDetail">-----</div>
+                            <div class="cancel">
+                                <button class="btn btn-danger cancelButton">cancel session</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="completedDetail detailSection">
+                <div class="alert alert-info">
+                    <div class="alert-heading">
+                        Completed Sessions
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div class="alert alert-info">
+                        <!-- here is list of sessions, two sessions are written just for understanding formatting -->
+                        <div class="alert-heading">Session 1</div>
+                        <div class="completedSessionDetails">
+
+                            <div class="typeDetail">Date</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Expert</div>
+                            <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                            <div class="typeDetail">Time</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Session Type</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Place</div>
+                            <div class="contentDetail">-----</div>
+                            <div class="feedback"><button class="btn btn-primary feedbackButton">Ask for  Feedback</button></div>
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <!-- here is list of sessions, two sessions are written just for understanding formatting -->
+                        <div class="alert-heading">Session 2</div>
+                        <div class="completedSessionDetails">
+
+                            <div class="typeDetail">Date</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Expert</div>
+                            <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                            <div class="typeDetail">Time</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Session Type</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Place</div>
+                            <div class="contentDetail">-----</div>
+                            <div class="feedback"><button class="btn btn-primary feedbackButton">Ask for  Feedback</button></div>
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <!-- here is list of sessions, two sessions are written just for understanding formatting -->
+                        <div class="alert-heading">Session 3</div>
+                        <div class="completedSessionDetails">
+
+                            <div class="typeDetail">Date</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Expert</div>
+                            <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                            <div class="typeDetail">Time</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Session Type</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Place</div>
+                            <div class="contentDetail">-----</div>
+                            <div class="feedback"><button class="btn btn-primary feedbackButton">Ask for  Feedback</button></div>
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <!-- here is list of sessions, two sessions are written just for understanding formatting -->
+                        <div class="alert-heading">Session 4</div>
+                        <div class="completedSessionDetails">
+
+                            <div class="typeDetail">Date</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Expert</div>
+                            <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                            <div class="typeDetail">Time</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Session Type</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Place</div>
+                            <div class="contentDetail">-----</div>
+                            <div class="feedback"><button class="btn btn-primary feedbackButton">Ask for  Feedback</button></div>
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <!-- here is list of sessions, two sessions are written just for understanding formatting -->
+                        <div class="alert-heading">Session 5</div>
+                        <div class="completedSessionDetails">
+
+                            <div class="typeDetail">Date</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Expert</div>
+                            <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                            <div class="typeDetail">Time</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Session Type</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Place</div>
+                            <div class="contentDetail">-----</div>
+                            <div class="feedback"><button class="btn btn-primary feedbackButton">Ask for  Feedback</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="expertDetail detailSection">
+                <div class="alert alert-info">
+                    <div class="alert-heading">
+                        Experts Contacted
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div class="alert alert-info">
+                        <!-- here is list of experts, two experts are written just for understanding formatting -->
+                        <div class="alert-heading">Expert 1</div>
+                        <div class="myExpertsDetails">
+                            <div class="myExpertName">ABC</div>
+                            <div class="myExpertImage"><img src="expert.png" class="myExpertImageImg"></div>
+                            <div class="myExpertViewProfile"><button class="btn btn-primary viewProfileButton">View Profile</button></div>
+
+
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <!-- here is list of experts, two experts are written just for understanding formatting -->
+                        <div class="alert-heading">Expert 2</div>
+                        <div class="myExpertsDetails">
+                            <div class="myExpertName">ABC</div>
+                            <div class="myExpertImage"><img src="expert.png" class="myExpertImageImg"></div>
+                            <div class="myExpertViewProfile"><button class="btn btn-primary viewProfileButton">View Profile</button></div>
+
+
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <!-- here is list of experts, two experts are written just for understanding formatting -->
+                        <div class="alert-heading">Expert 3</div>
+                        <div class="myExpertsDetails">
+                            <div class="myExpertName">ABC</div>
+                            <div class="myExpertImage"><img src="expert.png" class="myExpertImageImg"></div>
+                            <div class="myExpertViewProfile"><button class="btn btn-primary viewProfileButton">View Profile</button></div>
+
+
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <!-- here is list of experts, two experts are written just for understanding formatting -->
+                        <div class="alert-heading">Expert 4</div>
+                        <div class="myExpertsDetails">
+                            <div class="myExpertName">ABC</div>
+                            <div class="myExpertImage"><img src="expert.png" class="myExpertImageImg"></div>
+                            <div class="myExpertViewProfile"><button class="btn btn-primary viewProfileButton">View Profile</button></div>
+
+
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <!-- here is list of experts, two experts are written just for understanding formatting -->
+                        <div class="alert-heading">Expert 5</div>
+                        <div class="myExpertsDetails">
+                            <div class="myExpertName">ABC</div>
+                            <div class="myExpertImage"><img src="expert.png" class="myExpertImageImg"></div>
+                            <div class="myExpertViewProfile"><button class="btn btn-primary viewProfileButton">View Profile</button></div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="paymentDetail detailSection">
+                <div class="alert alert-info">
+                    <div class="alert-heading">
+                        Payment Details
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div class="alert alert-info">
+                        <div class="alert-heading">Payment 1</div>
+                        <div class="paymentDetails">
+
+                            <div class="typeDetail">Date of Payment</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Payment Amount</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Payment Mode</div>
+                            <div class="contentDetail">-----</div>
+
+
+                            <div class="moreSession"><button class="btn btn-primary moreSessionButton" data-toggle="modal" data-target="#viewMoreSession">View More about Session</button></div>
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <div class="alert-heading">Payment 2</div>
+                        <div class="paymentDetails">
+
+                            <div class="typeDetail">Date of Payment</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Payment Amount</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Payment Mode</div>
+                            <div class="contentDetail">-----</div>
+
+
+                            <div class="moreSession"><button class="btn btn-primary moreSessionButton">View More about Session</button></div>
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <div class="alert-heading">Payment 3</div>
+                        <div class="paymentDetails">
+
+                            <div class="typeDetail">Date of Payment</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Payment Amount</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Payment Mode</div>
+                            <div class="contentDetail">-----</div>
+
+
+                            <div class="moreSession"><button class="btn btn-primary moreSessionButton">View More about Session</button></div>
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <div class="alert-heading">Payment 4</div>
+                        <div class="paymentDetails">
+
+                            <div class="typeDetail">Date of Payment</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Payment Amount</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Payment Mode</div>
+                            <div class="contentDetail">-----</div>
+
+
+                            <div class="moreSession"><button class="btn btn-primary moreSessionButton">View More about Session</button></div>
+                        </div>
+                    </div>
+                    <div class="alert alert-info">
+                        <div class="alert-heading">Payment 5</div>
+                        <div class="paymentDetails">
+
+                            <div class="typeDetail">Date of Payment</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Payment Amount</div>
+                            <div class="contentDetail">-----</div>
+
+                            <div class="typeDetail">Payment Mode</div>
+                            <div class="contentDetail">-----</div>
+
+
+                            <div class="moreSession"><button class="btn btn-primary moreSessionButton">View More about Session</button></div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="viewMoreSession">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    'Username' - 'Session Number' - Details
+                                </div>
+                                <div class="userName">User Name</div>
+                                <div><img src="expert.png" class="userImage"></div>
+
+                                <div class="alert alert-info">
+                                    <!-- here is list of sessions, two sessions are written just for understanding formatting -->
+                                    <div class="alert-heading">Session 1</div>
+                                    <div class="completedSessionDetails">
+
+                                        <div class="typeDetail">Date</div>
+                                        <div class="contentDetail">-----</div>
+
+                                        <div class="typeDetail">Expert</div>
+                                        <div class="contentDetail">-----<br><button class="btn btn-primary profileExpert">View Profile</button></div>
+
+                                        <div class="typeDetail">Time</div>
+                                        <div class="contentDetail">-----</div>
+
+                                        <div class="typeDetail">Session Type</div>
+                                        <div class="contentDetail">-----</div>
+
+                                        <div class="typeDetail">Place</div>
+                                        <div class="contentDetail">-----</div>
+                                        <div class="close"><button class="btn btn-danger closeButton" data-dismiss="modal">close</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar ends here, above code is common to all pages... -->
+    <!-- footer section -->
+    <div class="row footer">
+        <div class="footerSub">
+            <div class="col">
+                Footer here
+            </div>
+            <div class="col">Footer here</div>
+            <div class="col">Footer here</div>
+        </div>
+    </div>
+</body>
+<script src="userInformationAdmin.js"></script>
+
+</html>
