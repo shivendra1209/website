@@ -1,0 +1,78 @@
+
+.navbar{
+    background-color:#78c043;
+    margin-bottom: 0;
+}
+.icons{
+
+    background-color: black;
+    margin-top:0;
+    margin-right: auto;
+
+}
+div.row.first{
+    position: relative;
+    display: block;
+    margin-left: -20px;
+}
+.thumbnail{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+}
+.inner{
+    text-align: center;
+}
+.main,body{
+    
+    background-color: gainsboro;
+}
+.experts{
+    background-color: gainsboro;
+}
+
+button.book_session{
+    display: block;
+    margin:15px auto 10px auto;
+
+}
+div#myCarousel.carousel.slide{
+   display: block;
+    height:300px;
+    width:auto;
+}
+
+div.item{
+    position: relative;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 80px;
+}
+
+div.item.active{
+  position: relative;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 80px;
+}
+div.carousel-caption{
+    position: relative;
+    text-decoration-color:black;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+footer {
+    background-color: #9FA0A4 !important;
+    color: #fff;
+    padding-top: 2.4375rem;
+    padding-bottom: 2.4375rem;
+    border-bottom: solid;
+    display: block;
+}
+.content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
