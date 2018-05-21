@@ -1,0 +1,169 @@
+body{
+    background-color: gainsboro;
+}
+.navbar{
+    background-color:#78c043;
+    margin-bottom: 0;
+}
+.first{
+    margin-top: 10px;
+}
+
+.gap{
+    margin-top: 30px;
+}
+
+.calendar,.mysessions{
+    display: block;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 5px #78c043;
+    font-size-adjust: auto; 
+}
+.sessionButton,
+.sessions,
+.bookSessionButton {
+    display: flex;
+    justify-content: center;
+    font-size: 1.75vw;
+    width: 80%;
+    display: block;
+    margin-left:2vw;
+    margin-right: 80px;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+.addslotButton{
+     display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    width: 80%;
+    display: block;
+    margin-left:2vw;
+    margin-right: 80px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    
+}
+.proceedButton{
+     display: flex;
+    justify-content: center;
+    font-size: 1vw;
+    width: 50%;
+    display: block;
+    margin-left:10vw;
+    margin-right: 2vw;
+    margin-bottom: 10px;
+    font-family: cursive;
+    margin-top: 8px;
+    
+}
+
+
+
+
+.modal-header {
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.userName {
+    text-align: center;
+    font-size: 1.75vw;
+    margin-bottom: 10px;
+}
+.userImage {
+    width: 10vw;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.alert-info{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+div#presentdate{
+    text-shadow:  5px;
+    font-family: cursive;
+    border-radius: 5px;
+    padding-left: 20px;
+    text-align: center; 
+    background-color: white;
+}
+
+.quickadd,daily{
+    
+    margin-left: 70px;
+    margin-right: 10px;
+}
+
+.slot{
+   
+    font-size: 30px;
+}
+
+
+form{
+    text-align: center;
+}
+.detail{
+    font-size-adjust: auto;
+    color:black;
+    float: left;
+}
+
+.filter{
+    display: block;
+}
+
+.patients{
+    margin-top: 20px;
+}
+
+.session{
+    border:2px solid black;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.sessiondetails{
+    border:1px solid black;
+    margin-bottom: 2px;
+}
+.scrolling{
+    border: 1px solid black;
+    margin-bottom: 8px;
+    height:200px;
+    overflow-y: scroll;
+}
+.second{
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #9FA0A4 !important;
+    color: #fff;
+    padding-top: 2.4375rem;
+    padding-bottom: 2.4375rem;
+    border-bottom: solid;
+    display: block;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+

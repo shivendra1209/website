@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="expert_dash.css">   
+  </head>
+  
+ 
+  <body>
+  
+      <nav class="navbar navbar-default">
+          <div class="container">
+             <div class="navbar-header">
+               <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                                      
+               </button>
+                <img src="logo_1.png" class="img-responsive">
+             </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-link"><a href="#"><strong style="color: black;">LINK1</strong></a></li>
+                    <li class="nav-link"><a href="#"><strong style="color: black;">LINK1</strong></a></li>
+                    <li class="nav-link"><a href="#"><strong style="color: black;">LINK1</strong></a></li>
+                    <li class="nav-link"><a href="#"><strong style="color: black;">LINK1</strong></a></li>
+                    <li class="nav-link"><a href="#"><strong style="color: black;"><span class="glyphicon glyphicon-user"></span> Sign Up</strong></a></li>
+                    <li class="nav-link"><a href="#"><strong style="color: black;"><span class="glyphicon glyphicon-log-in"></span> Login</strong></a></li>
+                </ul>
+              </div>
+          </div>
+      </nav>
+      <!-- Code for Calendar block-->
+      <div class="container">
+          <div class="row first">
+              <div class="col-sm-5 calendar gap">
+                  <h3 class="title" style="text-align: center;"><strong>Calendar</strong></h3>
+                  <hr>
+                  <button type="button" class="btn btn-primary btn-block sessionButton" data-toggle="modal" data-target="#showcalendar">Show Calendar</button>
+                  
+                   <button type="button" class="btn btn-primary btn-block sessionButton" data-toggle="modal" data-target="#showschedule">Show Schedule</button>
+                   
+                   
+                   
+                    <button type="button" class="btn btn-primary btn-block sessionButton" data-toggle="modal" data-target="#reschedule">Re-schedule / Delete slots ?</button>
+                  
+              </div>
+              <div class="col-sm-2">
+                  
+              </div>
+              <div class="col-sm-5 calendar">
+                  <h3 class="title" style="text-align: center;"><strong>My Patients</strong></h3>
+                  <hr>
+                  
+                  <div class="row">
+                      <div class="col-xs-6 patients">
+                        <div class="detail">
+                            <strong>Name :</strong>
+                             </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                            
+                        </div> 
+                        <div class="detail">
+                            <strong>Session :</strong>
+                             </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                            
+                        </div> 
+                        
+                         <div class="detail">
+                            <strong>Date :</strong>
+                             </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                            
+                        </div> 
+                        <div class="detail">
+                            <strong>Note :</strong>
+                             </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                            
+                        </div> 
+                           <div class="detail">
+                            <strong>Next Schedule :</strong>
+                             </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                            
+                        </div> 
+                           
+                                                
+                         
+                          
+                         
+                      </div>
+                      
+                      <!-- Filter section code-->
+                      <div class="col-xs-6 filter">
+                          <h5 style="display:flex; justify-content: center; font-size-adjust: auto;"><strong>Filter <span class="glyphicon glyphicon-filter"></span></strong></h5>
+                       <form class="form-horizontal" action="#">
+                          <div class="form-group">
+                            <label class="control-label col-sm-2" for="name" style="padding-left: 5px;">Name:</label>
+                            <div class="col-sm-10">
+                              <input type="name" class="form-control" id="name" placeholder="Name" name="name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-sm-2" for="age">Age:</label>
+                            <div class="col-sm-10">          
+                              <input type="age" class="form-control" id="age" placeholder="Age" name="age">
+                            </div>
+                          </div>
+                          
+                          <div class="form-group">
+                            <label class="control-label col-sm-2">  Gender:
+                                     </label>
+                            <div class="col-sm-10"> 
+                                    <select name="gender" style="margin-top: 8px; margin-left: 2px;border-radius:3px; ">
+                                         <option value="male">Male</option>
+                                         <option value="female">Female</option>
+                                         <option value="other">Other</option>
+                                </select>         
+                            </div>
+                          </div>
+                          
+                          
+                          
+                          <div class="form-group">        
+                            <div class="col-sm-offset-2 col-sm-10">
+                                 <button type="search" class="btn btn-info">
+                                    <span class="glyphicon glyphicon-search"></span> Search
+                                </button>
+                            </div>
+                          </div>
+                        </form>        
+                      </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+              </div>
+          </div>
+      </div>
+      
+      
+      <!--below code is for modal when user click on show calendar button --> 
+       <div class="modal fade" id="showcalendar">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- profile section contains six particulars to show dob, phone no, email, username, gender, occupation -->
+                    <div class="modal-header">
+                      <bold>Calendar</bold>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="alert alert-info">
+                            
+                            <div class="userDetails">
+                                <div class="typeDetail">Date</div><br>
+                                <div class="contentDetail">
+                               <div class="dropdown">
+                                   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Date
+                                   <span class="caret"></span></button>
+                                   <ul class="dropdown-menu">
+                                    <!-- from these 7 date user will select any one and respective modal will be opened-->              <li><a href="#">Date-1</a></li>
+                                     <li><a href="#">Date-2</a></li>
+                                     <li><a href="#">Date-3</a></li>
+                                      <li><a href="#">Date-4</a></li>
+                                       <li><a href="#">Date-5</a></li>
+                                        <li><a href="#">Date-6</a></li>
+                                         <li><a href="#">Date-7</a></li>
+                                   </ul>
+                                 </div>
+                                </div>
+                                <hr>
+                                <div class="typeDetail">Appointment with ABC</div>
+                                <hr>
+                                <div class="typeDetail">------</div>
+                                <hr>
+                                <div class="typeDetail">Video Session</div>
+                                <hr>
+                                <div class="typeDetail">Audio Session</div>
+                                <hr>
+                                
+                                 
+                                <div class="col-sm-6 slot">
+    
+                                <div class="typeDetail"><button type="button" class="btn btn-primary btn-block addslotButton" data-toggle="modal" data-target="#quickslot">QUICK ADD SLOT</button></div>
+                                </div>
+                                
+                                <div class="col-sm-6 slot">
+                                <div class="typeDetail"><button type="button" class="btn btn-primary btn-block addslotButton" data-toggle="modal" data-target="#weekslot">ADD SLOT</button></div>
+                                
+                                
+                                </div>
+                                
+                                <hr>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal" style="display:block;">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+             
+             <!--below code is for modal when user click on Add slot for week time button --> 
+               <div class="modal fade" id="weekslot">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- contains list of completed sessions, including details like date, time, type, expert involved, place -->
+                    <div class="modal-header">
+                        Add Slot
+                    </div>
+                    <div class="modal-body">
+                                <div class="alert alert-info">
+                           
+                            <div class="userDetails">
+                                
+                                 <div class="panel-group" id="accordion">
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">DAILY</a>
+                                            </h4>
+                                          </div>
+                                          <div id="collapse1" class="panel-collapse collapse in">
+                                            <div class="panel-body"> 
+                                                    <div class="selecttime">SELECT TIME :</div>
+                                    <form action="#" method=""><br>
+                                             8:00 A.M.  <input type="checkbox" name="time" value="five"><br> <br>
+                                             9:00 A.M.  <input type="checkbox" name="time" value="six" checked><br><br>
+                                             10:00 A.M.  <input type="checkbox" name="time" value="seven"><br><br>
+                                             11:00 A.M.  <input type="checkbox" name="time" value="eight"><br><br>
+                                             12:00 P.M.  <input type="checkbox" name="time" value="eight"><br><br>
+                                             1:00 P.M.  <input type="checkbox" name="time" value="eight"><br><br>
+                                             2:00 P.M.  <input type="checkbox" name="time" value="eight"><br><br>            
+                                         
+                                    <input class="btn btn-warning daily" type="submit" value="SAVE">
+                                </form></div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">ALTERNATIVELY</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body"><div class="selecttime">SELECT TIME :</div>
+                                    <form action="#" method=""><br>
+                                             8:30 A.M.  <input type="checkbox" name="time" value="five"><br> <br>
+                                             9:30 A.M.  <input type="checkbox" name="time" value="six" checked><br><br>
+                                             10:30 A.M.  <input type="checkbox" name="time" value="seven"><br><br>
+                                             11:30 A.M.  <input type="checkbox" name="time" value="eight"><br><br>
+                                             12:30 P.M.  <input type="checkbox" name="time" value="eight"><br><br>
+                                             1:30 P.M.  <input type="checkbox" name="time" value="eight"><br><br>
+                                             2:30 P.M.  <input type="checkbox" name="time" value="eight"><br><br>            
+                                         
+                                    <input class="btn btn-warning alternatively" type="submit" value="SAVE">
+                                </form></div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">SELECT DATE</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+             <form action="#">
+             Pick Your Date :
+              <input type="date" name="dateselect">
+              <button type="button" class="btn btn-primary btn-block proceedButton" data-toggle="modal" data-target="#selectdateslot">PROCEED</button>
+           </form>
+           </div>
+      </div>
+    </div>
+  </div> 
+                                
+                                
+                                    </div>        
+                            
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal" style="display: block;">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+             
+             
+             
+             
+            <!--below code is for modal when user click on show schedule button --> 
+              
+              <div class="modal fade" id="showschedule">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- profile section contains six particulars to show dob, phone no, email, username, gender, occupation -->
+                    <div class="modal-header">
+                       Schedule
+                    </div>
+                    <div class="modal-body">
+                    
+                        <div class="alert alert-info">
+                           
+                            <div class="userDetails">
+                               
+                               
+                                
+                                 <div class="panel-group" id="accordion1">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse11">TODAY</a>
+                                      </h4>
+                                    </div>
+                                                                  <div id="collapse11" class="panel-collapse collapse in">
+                                      <div class="panel-body">
+                                          <div class="time1">
+                                              3:00 P.M - 4:00 P.M <strong>:</strong> ABC <strong>VideoCall</strong>
+                                          </div><br>
+                                          <div class="time2">
+                                              5:00 P.M - 6:00 P.M <strong>:</strong> PQR <strong>Audio</strong>
+                                          </div>
+                                          
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse22">TOMORROW</a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse22" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                             <div class="time1">
+                                              3:00 P.M - 4:00 P.M <strong>:</strong> ABC <strong>VideoCall</strong>
+                                          </div>
+                                          <br>
+                                          <div class="time2">
+                                              5:00 P.M - 6:00 P.M <strong>:</strong> PQR <strong>Audio</strong>
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse33">DAY AFTER TOMORROW</a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapse33" class="panel-collapse collapse">
+                                      <div class="panel-body"><div class="time1">
+                                              3:00 P.M - 4:00 P.M <strong>:</strong> ABC <strong>VideoCall</strong>
+                                          </div>
+                                          <br>
+                                          <div class="time2">
+                                              5:00 P.M - 6:00 P.M <strong>:</strong> PQR <strong>Audio</strong>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div> 
+                                
+                                
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal" style="display: block;">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+          
+        
+        
+        
+        
+      <!--below code is for modal when user click on quick add slot button --> 
+             <div class="modal fade" id="quickslot">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- profile section contains six particulars to show dob, phone no, email, username, gender, occupation -->
+                    <div class="modal-header">
+                       Quick Add Slot
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="alert alert-info">
+                            
+                            <div class="userDetails">
+                                <div class="typeDetail">Date</div><br>
+                                <div class="contentDetail">
+                            <div id="presentdate">
+                                   
+                                   
+                                     </div>
+                                </div>
+                               <form action="#" method=""><br>
+                                    5:00 P.M.  <input type="checkbox" name="time" value="five"><br> <br>
+                                    6:00 P.M.  <input type="checkbox" name="time" value="six" checked><br><br>
+                                    7:00 P.M.  <input type="checkbox" name="time" value="seven"><br><br>
+                                    8:00 P.M.  <input type="checkbox" name="time" value="eight"><br><br>
+                                         
+                                    <input class="btn btn-warning quickadd" type="submit" value="QUICK ADD">
+                                </form>
+                                
+                                <hr>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal" style="display:block;">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!--Below is the code of modal when user clicks from select date option fromm add slot modal-->
+         <div class="modal fade" id="selectdateslot">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                 
+                    <div class="modal-header">
+                       Add Slot for the picked DATE
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="alert alert-info">
+                            
+                            <div class="userDetails">
+                                <div class="typeDetail">Select Time :</div><br>
+                                <div class="contentDetail">
+                            <div id="presentdate">
+                                   
+                                   
+                                     </div>
+                                </div>
+                               <form action="#" method=""><br>
+                                    5:00 P.M.  <input type="checkbox" name="time" value="five"><br> <br>
+                                    6:00 P.M.  <input type="checkbox" name="time" value="six" checked><br><br>
+                                    7:00 P.M.  <input type="checkbox" name="time" value="seven"><br><br>
+                                    8:00 P.M.  <input type="checkbox" name="time" value="eight"><br><br>
+                                         
+                                    <input class="btn btn-warning quickadd" type="submit" value="SAVE">
+                                </form>
+                                
+                                <hr>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal" style="display:block;">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <!-- Below is the code of modal when user clicks on reschedule / delete slots button-->
+         <div class="modal fade" id="reschedule">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- profile section contains six particulars to show dob, phone no, email, username, gender, occupation -->
+                    <div class="modal-header">
+                      <bold>Re-schedule / Delete slots</bold>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="alert alert-info">
+                            
+                            <div class="userDetails">
+                               
+                                <div class="contentDetail">
+                           
+                                </div>
+                                <hr>
+                                <div class="typeDetail">FOR rescheduling or deleting the slots</div>
+                                lorem ipsum
+                                 lorem ipsum
+                                  lorem ipsum
+                                   lorem ipsum
+                          
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal" style="display:block;">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+      <!-- below is the code for my session block-->
+  <div class="container">
+      <div class="row second">
+          <div class="col-xs-2">
+              
+          </div>
+          <div class="col-xs-8 mysessions">
+              <h3 class="title" style="text-align: center;"><strong>My Sessions</strong></h3>
+                <hr>
+                
+            <div class="col-sm-1">
+                
+            </div>    
+            <div class="col-sm-10 session">
+               <div class="upcomingsession">
+                   <h4 style="display:flex; justify-content: center;font-style:italic;"><strong>Upcoming Sessions</strong></h4>
+                        <div class="scrolling">
+                        <div class="sessiondetails">
+                      <div class="detail">
+                       <strong>Name :</strong>
+                       </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>  
+                   
+                        <div class="detail">
+                       <strong>Time :</strong>
+                       </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>
+                   
+                        <div class="detail">
+                       <strong>Type :</strong>
+                       </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>
+                   </div>
+                    <div class="sessiondetails">
+                      <div class="detail">
+                       <strong>Name :</strong>
+                        </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>
+                   
+                    <div class="detail">
+                       <strong>Time :</strong>
+                        </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>
+                           <div class="detail">
+                      <strong>Type :</strong>
+                        </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>
+                   
+               
+               </div>
+               
+               <div class="sessiondetails">
+                      <div class="detail">
+                       <strong>Name :</strong>
+                       </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>  
+                   
+                        <div class="detail">
+                       <strong>Time :</strong>
+                       </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>
+                   
+                        <div class="detail">
+                       <strong>Type :</strong>
+                       </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>
+                   </div>
+                   
+                   
+                   <div class="sessiondetails">
+                      <div class="detail">
+                       <strong>Name :</strong>
+                       </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>  
+                   
+                        <div class="detail">
+                       <strong>Time :</strong>
+                       </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>
+                   
+                        <div class="detail">
+                       <strong>Type :</strong>
+                       </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>
+                   </div>
+                   
+                   <div class="sessiondetails">
+                      <div class="detail">
+                       <strong>Name :</strong>
+                       </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>  
+                   
+                        <div class="detail">
+                       <strong>Time :</strong>
+                       </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>
+                   
+                        <div class="detail">
+                       <strong>Type :</strong>
+                       </div>
+                            <div class="detailtext">
+                            <strong> -- ---------</strong>
+                           </div>
+                   </div>
+               </div>
+               </div>
+               <div class="sec">
+                  
+                    <button type="button" class="btn btn-warning btn-block sessionButton" data-toggle="modal" data-target="#completedsessions">Completed Sessions</button>
+                    
+                      <button type="button" class="btn btn-warning btn-block sessionButton" data-toggle="modal" data-target="#bookforpatient">Book for Patient ?</button>
+                   
+               </div>
+                
+            </div>    
+            <div class="col-sm-1">
+                
+            </div>         
+                  
+          </div>
+          <div class="col-xs-2">
+              
+          </div>
+
+
+      </div>
+  </div>
+     <!--below is the code of modal when user clicks on completed session  button-->
+     <div class="modal fade" id="completedsessions">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <bold>Completed Sessions</bold>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="alert alert-info">
+                            
+                            <div class="userDetails">
+                               
+                                <hr>
+                                Completed Sessions will be displayed here.
+                                <br>
+                                <br>
+                                --------
+                                <br>
+                                -------
+                                <br>
+                                <br>
+                                <br>
+                             
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal" style="display:block;">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        
+         <!--below is the code of modal when user clicks on book a patient button-->
+        <div class="modal fade" id="bookforpatient">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- profile section contains six particulars to show dob, phone no, email, username, gender, occupation -->
+                    <div class="modal-header">
+                      <bold>Book for Patient</bold>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="alert alert-info">
+                            
+                            <div class="userDetails">
+                               
+                                <div class="contentDetail">
+                                       <form class="form-horizontal" action="#">
+                                         <div class="form-group">
+                                           <label class="control-label col-sm-2" for="name">Name:</label>
+                                           <div class="col-sm-10">
+                                             <input type="text" class="form-control" id="pname" placeholder="Enter patient's name" name="pname">
+                                           </div>
+                                         </div>
+                                         <div class="form-group">
+                                           <label class="control-label col-sm-2" for="pemail">E-mail:</label>
+                                           <div class="col-sm-10">          
+                                             <input type="email" class="form-control" id="pemail" placeholder="Enter patient's E-mail" name="pemail">
+                                           </div>
+                                         </div>
+                                           <div class="form-group">
+                                           <label class="control-label col-sm-2" for="gnd">Gender:</label>
+                                           <div class="col-sm-10">          
+                                             <select name="gender" style="margin-top: 10px; float: left;">
+                                                      <option value="male">Male</option>
+                                                      <option value="female">Female</option>
+                                                      <option value="other">Other</option>
+                                             </select>  
+                                           </div>
+                                         </div>
+                                           <div class="form-group">
+                                           <label class="control-label col-sm-2" for="pslot">Slot:</label>
+                                           <div class="col-sm-10">          
+                                            
+                                             <input type="datetime-local" name="pslot" style="margin-top: 6px; float: left;">
+                                           </div>
+                                         </div>
+                                        <div class="form-group">
+                                           <label class="control-label col-sm-2" for="pcontact">Contact:</label>
+                                           <div class="col-sm-10">          
+                                            
+                                             <input type="tel" name="pcontact" style="margin-top: 6px; float: left;width: 30vw;">
+                                           </div>
+                                         </div>
+                                         <div class="form-group">        
+                                           <div class="col-sm-offset-2 col-sm-10">
+                                                <button type="submit" class="btn btn-success" style="margin-top: 2px;">BOOK</button>
+                                               <button type="reset" class="btn btn-success" style="margin-top: 2px;">RESET</button>
+                                              </div>
+                                            </div>
+                                          </form>
+                                </div>
+                                <hr>
+                               
+                               
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal" style="display:block;">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+      
+      <footer>
+      <div class="content">
+        <div class="row">
+          <div class="col col-1-of-3 footer-nav">
+           <p><strong>Footer Block</strong></p>
+            <p><strong>Navigation</strong></p>
+            <p><a href="faq-contact.html">FAQ &amp; Contact</a></p>
+            <p><a href="rules.html">Rules &amp; Conditions</a></p>
+ 
+          </div>
+        
+        
+        </div>
+       
+      </div>
+    </footer>
+
+    </body>
+    <script src="expert_dash.js"></script>
+</html>
